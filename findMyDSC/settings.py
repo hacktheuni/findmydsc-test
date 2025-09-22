@@ -14,10 +14,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', get_random_secret_key())
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # Allowed hosts for production
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["findmydsc-test.onrender.com", "localhost", "127.0.0.1"]
 
 # Application definition
 INSTALLED_APPS = [
